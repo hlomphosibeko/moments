@@ -1,5 +1,5 @@
 import NavBar  from './components/NavBar';
-import style from './App.module.css';
+import styles from './App.module.css';
 import Container from 'react-bootstrap/Container';
 import {Route, Switch} from 'react-router-dom' ;
 import './api/axiosDefaults';
@@ -8,9 +8,9 @@ import SignInForm from './pages/auth/SignInForm';
 
 function App() {
   return (          
-    <div className={style.App}>
+    <div className={styles.App}>
       <NavBar />
-      <Container className={style.Main}>
+      <Container className={styles.Main}>
         <Switch>
           <Route exact path="/" render={() => <h1>Home page</h1>} />
           <Route exact path="/signin" render={() => <SignInForm />} />
